@@ -1,26 +1,26 @@
 {
-  "title": "Title of the website. Update me.",
-  "url": "https://update-me.com",
-  "domain": "update-me.com",
-  "description": "Description of the website. Update me.",
-  "genre": "Insert a schema.org genre",
+  "title": "@martelogan.dev",
+  "url": "https://martelogan.dev",
+  "domain": "martelogan.dev",
+  "description": "Logan Martel - personal homepage. Blog TBD.",
+  "genre": "http://vocab.getty.edu/aat/300265722",
   "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
   "sendWebVitals": false,
   "feed": {
-    "subtitle": "Subtitle. Update me.",
+    "subtitle": "@martelogan.blog",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://update-me.com"
+    "id": "https://martelogan.dev"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://update-me.com/feed/feed.json"
+    "url": "https://martelogan.dev"
   },
   "author": {
-    "name": "Author Name. Update me.",
-    "twitterHandle": "update_me"
+    "name": "Logan Martel",
+    "twitterHandle": "@martelogan"
   },
   "publisher": {
-    "name": "Publisher name. Update me."
+    "name": "Logan Martel"
   }
 }

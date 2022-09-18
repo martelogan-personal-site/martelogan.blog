@@ -46,14 +46,14 @@ describe("check build output for a generic post", () => {
     });
 
     it("should have metadata", () => {
-      assert.equal(select("title"), "This is my first post.");
+      assert.equal(select("title"), "First post!");
       expect(select("meta[property='og:image']", "content")).to.match(
         /\/img\/remote\/\w+.jpg/
       );
       assert.equal(select("link[rel='canonical']", "href"), POST_URL);
       assert.equal(
         select("meta[name='description']", "content"),
-        "This is a post on My Blog about agile frameworks."
+        "The one where I'm optimistic about starting a blog."
       );
     });
 
@@ -117,14 +117,14 @@ describe("check build output for a generic post", () => {
     });
 
     it("should have a header", () => {
-      expect(select("header > h1")).to.equal("This is my first post.");
+      expect(select("header > h1")).to.equal("First post!");
       expect(select("header aside")).to.match(/\d+ min read./);
       expect(select("header dialog", "id")).to.equal("message");
     });
 
     it("should have a published date", () => {
-      expect(select("article time")).to.equal("01 May 2018");
-      expect(select("article time", "datetime")).to.equal("2018-05-01");
+      expect(select("article time")).to.equal("16 Sep 2022");
+      expect(select("article time", "datetime")).to.equal("2022-09-16");
     });
 
     it("should link to twitter with noopener", () => {
@@ -188,8 +188,10 @@ describe("check build output for a generic post", () => {
         );
         const obj = JSON.parse(json);
         expect(obj.url).to.equal(POST_URL);
+        // Update: do json-ld consumers (e.g. Google) understand HTML character entities?
+        // maybe: https://stackoverflow.com/a/68854514
         expect(obj.description).to.equal(
-          "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster..."
+          "I&#39;ve gone &amp;amp; started a blog. We&#39;ll see how this pans out. In any case, I don&#39;t quite have readily-available musings to blog about yet...."
         );
         expect(obj.image.length).to.be.greaterThan(0);
         obj.image.forEach((url, index) => {

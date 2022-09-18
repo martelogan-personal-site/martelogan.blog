@@ -1,7 +1,7 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
-  --primary-dark: #e7bf60;
+  --primary: #2acacc;
+  --primary-dark: #45b4b6;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -17,6 +17,16 @@
  */
 main img {
   content-visibility: auto;
+}
+
+.social-icon {
+  opacity: 0.7;
+  margin-right: 1em;
+  margin-left: 1em
+}
+.social-icon:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 
 /* Avoid the header hiding the content on anchor scroll. */

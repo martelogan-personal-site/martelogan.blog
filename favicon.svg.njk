@@ -2,6 +2,9 @@
 permalink: /favicon.svg
 eleventyExcludeFromCollections: true
 ---
+{# Update: currently used only in development.
+   Would need to adjust base.njk precedence for favicons to change its behavior.
+#}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
 <text y=".9em" font-size="90">{% if isdevelopment %}🚨{%else%}💌{%endif%}</text>
 </svg>

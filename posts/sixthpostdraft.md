@@ -1,5 +1,5 @@
 ---
-title: This is my sixth post.
+title: This is a draft post.
 description: Draft post from the future
 date: 2018-07-04
 scheduled: 2099-06-23

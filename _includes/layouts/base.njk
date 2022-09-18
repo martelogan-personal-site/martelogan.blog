@@ -6,12 +6,21 @@
     {% endif %}
   >
   <head>
+    <!--
+      Copyright (c) 2022, Logan Martel
+      This file is distributed under the Apache License 2.0.
+      Please refer to the LICENSE file for a copy of the license.
+
+      An inherited license for "eleventy-high-performance-blog"
+      is also included under inherited-licenses/eleventy-high-performance-blog/LICENSE
+    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if isdevelopment %}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     {% else %}
     <link rel="icon" href="{{ '/img/favicon/favicon-192x192.png' | addHash }}" type="image/png">
+    <link rel="shortcut icon" href="{{ '/img/favicon/favicon.ico' | addHash }}" type="image/ico" />
     {% endif %}
     <meta name="theme-color" content="#f9c412">
     <meta name="robots" content="max-snippet:-1, max-image-preview: large, max-video-preview: -1">
@@ -92,6 +101,7 @@
 
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
+      {% include "social-icons.njk" %}
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
