@@ -23,6 +23,7 @@ const metadata = require("./metadata.json");
 
 module.exports = function () {
   let id = metadata.googleAnalyticsId;
+  // sets ID to null if not yet updated
   if (/Update me/.test(id)) {
     id = null;
   }

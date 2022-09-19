@@ -4,7 +4,7 @@
   "domain": "martelogan.dev",
   "description": "Logan Martel - personal homepage. Blog TBD.",
   "genre": "http://vocab.getty.edu/aat/300265722",
-  "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
+  "googleAnalyticsId": "UA-241677056-1",
   "sendWebVitals": false,
   "feed": {
     "subtitle": "@martelogan.blog",
